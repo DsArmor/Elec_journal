@@ -21,7 +21,7 @@
             android:label="TeachersActivity" >
         </activity>
         <activity
-            android:name=".ListTeachersActivity"
+            android:name=".Activity.ListTeachersActivity"
             android:label="ListTeachersActivity" >
         </activity>
 

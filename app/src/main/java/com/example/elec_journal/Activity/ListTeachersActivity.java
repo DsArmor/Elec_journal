@@ -1,8 +1,10 @@
-package com.example.elec_journal;
+package com.example.elec_journal.Activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.elec_journal.R;
 
 public class ListTeachersActivity extends AppCompatActivity {
     @Override
