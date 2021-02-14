@@ -8,9 +8,9 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
+/**/app/build/
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-/app/src/main/java/com/example/elec_journal/Activity/TeachersActivity.java
