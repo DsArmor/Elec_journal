@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,14 +22,16 @@ public class TeachersActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(TeachersActivity.this, ListTeachersActivity.class);
-                startActivity(i);
+                startActivityForResult(i, 1);
             }
         });
         add_teacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(TeachersActivity.this, ListTeachersActivity.class);
+                Intent i = new Intent(TeachersActivity.this, AddTeacherActivity.class);
                 startActivity(i);
+//                TextView str_add=findViewById(R.id.str);
+//                str_add.setText("Teacher is added");
             }
         });
 //        back.setOnClickListener(new View.OnClickListener() {

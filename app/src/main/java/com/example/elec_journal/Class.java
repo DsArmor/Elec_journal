@@ -6,5 +6,4 @@ public class Class {
     public Learner[] Learners;
     public void getList(){}
     public void getListParents(){}
-
 }

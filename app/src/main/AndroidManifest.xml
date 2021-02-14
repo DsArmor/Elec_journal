@@ -24,7 +24,10 @@
             android:name=".Activity.ListTeachersActivity"
             android:label="ListTeachersActivity" >
         </activity>
-
+        <activity
+            android:name=".Activity.AddTeacherActivity"
+            android:label="AddTeacherActivity" >
+        </activity>
     </application>
 
 </manifest>
