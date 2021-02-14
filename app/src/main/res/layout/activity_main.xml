@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <Button
+        android:id="@+id/Teachers"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:text="Teachers"
+        app:layout_constraintBottom_toTopOf="@+id/Learners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Learners"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:text="Learners"
+        app:layout_constraintBottom_toTopOf="@+id/Classes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Classes"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="24dp"
+        android:text="Classes"
+        app:layout_constraintBottom_toTopOf="@+id/Electives"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Electives"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="24dp"
+        android:text="Electives"
+        app:layout_constraintBottom_toTopOf="@+id/Sections"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Sections"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="24dp"
+        android:text="Sections"
+        app:layout_constraintBottom_toTopOf="@+id/Employees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Employees"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:text="Employees"
+        app:layout_constraintBottom_toTopOf="@+id/Electrnic_journal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Electrnic_journal"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:text="Electrnic journal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/Teachers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
