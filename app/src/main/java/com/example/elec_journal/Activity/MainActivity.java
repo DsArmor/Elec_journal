@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-//        classes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(MainActivity.this, MainActivity2.class);
-//                startActivity(i);
-//            }
-//        });
+        classes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ClassesActivity.class);
+                startActivity(i);
+            }
+        });
 //        electives.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

@@ -40,6 +40,14 @@
             android:name=".Activity.learners.AddLearnerActivity"
             android:label="AddLearnerActivity" >
         </activity>
+        <activity
+            android:name=".Activity.ClassesActivity"
+            android:label="ClassesActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.AddClassActivity"
+            android:label="AddClassActivity" >
+        </activity>
     </application>
 
 </manifest>
