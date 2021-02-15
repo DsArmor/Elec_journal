@@ -1,7 +1,6 @@
-package com.example.elec_journal.Activity;
+package com.example.elec_journal.Activity.teachers;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,21 +13,18 @@ import com.example.elec_journal.R;
 import com.example.elec_journal.School;
 import com.example.elec_journal.Teacher;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-
-import javax.net.ssl.SSLHandshakeException;
 
 public class AddTeacherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_teacher);
-        Button add=findViewById(R.id.add);
-        EditText CardID=findViewById(R.id.CardID);
-        EditText Fio=findViewById(R.id.FirstLastName);
-        EditText Position=findViewById(R.id.Position);
-        EditText Qualification = findViewById(R.id.Qualification);
+        Button add=findViewById(R.id.add_t);
+        EditText CardID=findViewById(R.id.CardIDT);
+        EditText Fio=findViewById(R.id.FirstLastNameT);
+        EditText Position=findViewById(R.id.PositionT);
+        EditText Qualification = findViewById(R.id.QualificationT);
         TextView warning = findViewById(R.id.warn1);
         add.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
@@ -44,7 +40,7 @@ public class AddTeacherActivity extends AppCompatActivity {
                     School.teachers = Arrays.copyOf(School.teachers, School.teachers.length+1);
                     School.teachers[School.teachers.length-1]=new Teacher();
                     School.teachers[School.teachers.length-1].CardID=Integer.parseInt(CardID.getText().toString());
-                    School.teachers[School.teachers.length-1].Fio=Fio.getText().toString();
+                    School.teachers[School.teachers.length-1].FullName=Fio.getText().toString();
                     School.teachers[School.teachers.length-1].Position=Position.getText().toString();
                     School.teachers[School.teachers.length-1].Qualification=Qualification.getText().toString();
                     finish();

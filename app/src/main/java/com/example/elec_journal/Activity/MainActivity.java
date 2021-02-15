@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.elec_journal.Activity.teachers.TeachersActivity;
 import com.example.elec_journal.R;
 import com.example.elec_journal.School;
 
@@ -33,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-//        learners.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(MainActivity.this, MainActivity2.class);
-//                startActivity(i);
-//            }
-//        });
+        learners.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, LearnersActivity.class);
+                startActivity(i);
+            }
+        });
 //        classes.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

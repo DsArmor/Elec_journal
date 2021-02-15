@@ -17,16 +17,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.TeachersActivity"
+            android:name=".Activity.teachers.TeachersActivity"
             android:label="TeachersActivity" >
         </activity>
         <activity
-            android:name=".Activity.ListTeachersActivity"
+            android:name=".Activity.teachers.ListTeachersActivity"
             android:label="ListTeachersActivity" >
         </activity>
         <activity
-            android:name=".Activity.AddTeacherActivity"
+            android:name=".Activity.teachers.AddTeacherActivity"
             android:label="AddTeacherActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.AddLearnerActivity"
+            android:label="AddTeacherActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.LearnersActivity"
+            android:label="AddLearnerActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.ListLearnersActivity"
+            android:label="AddLearnerActivity" >
         </activity>
     </application>
 

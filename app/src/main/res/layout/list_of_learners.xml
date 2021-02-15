@@ -7,7 +7,7 @@
     android:isScrollContainer="true">
 
     <TextView
-        android:id="@+id/teachers_list"
+        android:id="@+id/learners_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/back_t_list"
+        android:id="@+id/back_l_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
