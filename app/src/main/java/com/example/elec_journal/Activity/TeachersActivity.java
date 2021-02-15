@@ -30,16 +30,13 @@ public class TeachersActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(TeachersActivity.this, AddTeacherActivity.class);
                 startActivity(i);
-//                TextView str_add=findViewById(R.id.str);
-//                str_add.setText("Teacher is added");
             }
         });
-//        back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(TeachersActivity.this, .class);
-//                startActivity(i);
-//            }
-//        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }

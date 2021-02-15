@@ -47,9 +47,6 @@ public class AddTeacherActivity extends AppCompatActivity {
                     School.teachers[School.teachers.length-1].Fio=Fio.getText().toString();
                     School.teachers[School.teachers.length-1].Position=Position.getText().toString();
                     School.teachers[School.teachers.length-1].Qualification=Qualification.getText().toString();
-//                    Intent i = new Intent();
-//                    i.putExtra("et", "Teacher is added");
-//                    setResult(RESULT_OK, i);
                     finish();
                 }
             }
