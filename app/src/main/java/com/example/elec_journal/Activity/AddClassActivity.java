@@ -36,9 +36,9 @@ public class AddClassActivity extends AppCompatActivity {
         add_class.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                School.
                 for (int i=0; i<teachers.length; i++){
                     if (teachers[i].isChecked()){
-
                     }
                 }
                 for (int i=0; i<learners.length; i++){
