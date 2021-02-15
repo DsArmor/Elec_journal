@@ -1,4 +1,4 @@
-package com.example.elec_journal.Activity;
+package com.example.elec_journal.Activity.learners;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -25,8 +25,8 @@ public class ListLearnersActivity extends AppCompatActivity {
                     +"Fio: "+ School.learners[i].FullName+"\n\t"
                     +"CardID: "+School.learners[i].CardID+"\n\t"
                     +"Position: "+School.learners[i].Position+"\n\t"
-                    +"Mother: "+School.learners[i].Parents[k].FullName+"\tPhone"+School.learners[i].Parents[k].Phone+"\n\t"
-                    +"Father: "+School.learners[i].Parents[k+1].FullName+"\tPhone"+School.learners[i].Parents[k+1].Phone+"\n\t"
+                    +"Mother: "+School.learners[i].Parents[k].FullName+"\tPhone: "+School.learners[i].Parents[k].Phone+"\n\t"
+                    +"Father: "+School.learners[i].Parents[k+1].FullName+"\tPhone: "+School.learners[i].Parents[k+1].Phone+"\n\t"
             );
             k++;
         }

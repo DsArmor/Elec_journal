@@ -1,4 +1,4 @@
-package com.example.elec_journal.Activity;
+package com.example.elec_journal.Activity.learners;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.elec_journal.Activity.teachers.AddTeacherActivity;
-import com.example.elec_journal.Activity.teachers.ListTeachersActivity;
-import com.example.elec_journal.Activity.teachers.TeachersActivity;
 import com.example.elec_journal.R;
 
 public class LearnersActivity extends AppCompatActivity {
@@ -24,7 +21,7 @@ public class LearnersActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(LearnersActivity.this, ListLearnersActivity.class);
-                startActivityForResult(i, 1);
+                startActivity(i);
             }
         });
         add_learners.setOnClickListener(new View.OnClickListener() {

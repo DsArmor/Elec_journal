@@ -1,4 +1,4 @@
-package com.example.elec_journal.Activity;
+package com.example.elec_journal.Activity.learners;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -46,11 +46,11 @@ public class AddLearnerActivity extends AppCompatActivity {
                     School.learners[School.learners.length-1].CardID=Integer.parseInt(CardID.getText().toString());
                     School.learners[School.learners.length-1].FullName=Fio.getText().toString();
                     School.learners[School.learners.length-1].Position=Position.getText().toString();
-                    School.learners[School.learners.length-1].Parents = Arrays.copyOf(School.learners[School.learners.length-1].Parents, School.learners.length+1);
+                    School.learners[School.learners.length-1].Parents = Arrays.copyOf(School.learners[School.learners.length-1].Parents, School.learners[School.learners.length-1].Parents.length+1);
                     School.learners[School.learners.length-1].Parents[School.learners[School.learners.length-1].Parents.length-1]= new Parent();
                     School.learners[School.learners.length-1].Parents[School.learners[School.learners.length-1].Parents.length-1].FullName=Mother.getText().toString();
                     School.learners[School.learners.length-1].Parents[School.learners[School.learners.length-1].Parents.length-1].Phone=Integer.parseInt(MotherPhone.getText().toString());
-                    School.learners[School.learners.length-1].Parents = Arrays.copyOf(School.learners[School.learners.length-1].Parents, School.learners.length+1);
+                    School.learners[School.learners.length-1].Parents = Arrays.copyOf(School.learners[School.learners.length-1].Parents, School.learners[School.learners.length-1].Parents.length+1);
                     School.learners[School.learners.length-1].Parents[School.learners[School.learners.length-1].Parents.length-1]= new Parent();
                     School.learners[School.learners.length-1].Parents[School.learners[School.learners.length-1].Parents.length-1].FullName=Father.getText().toString();
                     School.learners[School.learners.length-1].Parents[School.learners[School.learners.length-1].Parents.length-1].Phone=Integer.parseInt(FatherPhone.getText().toString());

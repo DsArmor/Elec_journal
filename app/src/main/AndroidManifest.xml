@@ -29,15 +29,15 @@
             android:label="AddTeacherActivity" >
         </activity>
         <activity
-            android:name=".Activity.AddLearnerActivity"
-            android:label="AddTeacherActivity" >
+            android:name=".Activity.learners.LearnersActivity"
+            android:label="LearnersActivity" >
         </activity>
         <activity
-            android:name=".Activity.LearnersActivity"
-            android:label="AddLearnerActivity" >
+            android:name=".Activity.learners.ListLearnersActivity"
+            android:label="ListLearnersActivity" >
         </activity>
         <activity
-            android:name=".Activity.ListLearnersActivity"
+            android:name=".Activity.learners.AddLearnerActivity"
             android:label="AddLearnerActivity" >
         </activity>
     </application>
