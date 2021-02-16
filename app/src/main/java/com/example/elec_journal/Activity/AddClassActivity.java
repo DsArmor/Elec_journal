@@ -10,8 +10,14 @@ import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.elec_journal.Class;
+import com.example.elec_journal.Learner;
 import com.example.elec_journal.R;
 import com.example.elec_journal.School;
+import com.example.elec_journal.Teacher;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class AddClassActivity extends AppCompatActivity {
     @Override
@@ -32,18 +38,23 @@ public class AddClassActivity extends AppCompatActivity {
             learners[i].setText(School.learners[i].FullName);
             learners_group.addView(learners[i]);
         }
-        Button add_class=findViewById(R.id.back_c);
+        Button add_class=(Button)findViewById(R.id.add_c);
         add_class.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                School.
+                School.classes = Arrays.copyOf(School.classes, School.classes.length+1);
+                School.classes[School.classes.length-1]= new Class();
                 for (int i=0; i<teachers.length; i++){
                     if (teachers[i].isChecked()){
+                        School.classes[School.classes.length-1].ClassTeacher= new Teacher();
+                        School.classes[i].ClassTeacher=School.teachers[i];
                     }
                 }
                 for (int i=0; i<learners.length; i++){
                     if (learners[i].isChecked()){
-
+                        School.classes[School.classes.length-1].Learners =  Arrays.copyOf( School.classes[School.classes.length-1].Learners,  School.classes[School.classes.length-1].Learners.length+1);
+                        School.classes[School.classes.length-1].Learners[School.classes[School.classes.length-1].Learners.length-1]=new Learner();
+                        School.classes[School.classes.length-1].Learners[School.classes[School.classes.length-1].Learners.length-1]=School.learners[i];
                     }
                 }
                 finish();

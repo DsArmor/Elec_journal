@@ -7,8 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.elec_journal.Activity.learners.AddLearnerActivity;
-import com.example.elec_journal.Activity.learners.LearnersActivity;
 import com.example.elec_journal.Activity.learners.ListLearnersActivity;
 import com.example.elec_journal.R;
 

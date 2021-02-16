@@ -48,6 +48,10 @@
             android:name=".Activity.AddClassActivity"
             android:label="AddClassActivity" >
         </activity>
+        <activity
+            android:name=".Activity.ListClassesActivity"
+            android:label="AddClassActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -18,17 +18,14 @@ public class ListLearnersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_of_learners);
         TextView learners= findViewById(R.id.learners_list);
-        int k=-1;
         for (int i = 0; i< School.learners.length; i++){
-            k++;
             learners.setText(learners.getText()+"\n\n"
                     +"Fio: "+ School.learners[i].FullName+"\n\t"
                     +"CardID: "+School.learners[i].CardID+"\n\t"
                     +"Position: "+School.learners[i].Position+"\n\t"
-                    +"Mother: "+School.learners[i].Parents[k].FullName+"\tPhone: "+School.learners[i].Parents[k].Phone+"\n\t"
-                    +"Father: "+School.learners[i].Parents[k+1].FullName+"\tPhone: "+School.learners[i].Parents[k+1].Phone+"\n\t"
+                    +"Mother: "+School.learners[i].Parents[0].FullName+"\t Phone: "+School.learners[i].Parents[0].Phone+"\n\t"
+                    +"Father: "+School.learners[i].Parents[1].FullName+"\t Phone: "+School.learners[i].Parents[1].Phone+"\n\t"
             );
-            k++;
         }
         Button button=findViewById(R.id.back_l_list);
         button.setOnClickListener(new View.OnClickListener() {
