@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -18,7 +19,7 @@ import com.example.elec_journal.Teacher;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
-
+//TODO Add function for registration class number
 public class AddClassActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class AddClassActivity extends AppCompatActivity {
             learners[i].setText(School.learners[i].FullName);
             learners_group.addView(learners[i]);
         }
+        EditText Num_Class=findViewById(R.id.Num_class);
         Button add_class=(Button)findViewById(R.id.add_c);
         add_class.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +49,7 @@ public class AddClassActivity extends AppCompatActivity {
                 for (int i=0; i<teachers.length; i++){
                     if (teachers[i].isChecked()){
                         School.classes[School.classes.length-1].ClassTeacher= new Teacher();
-                        School.classes[i].ClassTeacher=School.teachers[i];
+                        School.classes[School.classes.length-1].ClassTeacher=School.teachers[i];
                     }
                 }
                 for (int i=0; i<learners.length; i++){
@@ -57,6 +59,7 @@ public class AddClassActivity extends AppCompatActivity {
                         School.classes[School.classes.length-1].Learners[School.classes[School.classes.length-1].Learners.length-1]=School.learners[i];
                     }
                 }
+                School.classes[School.classes.length-1].Number=Num_Class.getText().toString();
                 finish();
             }
         });

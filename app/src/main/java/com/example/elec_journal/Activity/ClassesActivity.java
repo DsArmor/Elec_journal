@@ -21,7 +21,7 @@ public class ClassesActivity extends AppCompatActivity {
         list_classes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ClassesActivity.this, ListLearnersActivity.class);
+                Intent i = new Intent(ClassesActivity.this, ListClassesActivity.class);
                 startActivity(i);
             }
         });

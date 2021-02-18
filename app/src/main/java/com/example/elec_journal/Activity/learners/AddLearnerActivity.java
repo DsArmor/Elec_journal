@@ -35,7 +35,7 @@ public class AddLearnerActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                if (CardID.getText().toString().equals("") || Fio.getText().toString().equals("") || Position.getText().toString().equals("")){
+                if (CardID.getText().toString().equals("") || Fio.getText().toString().equals("") || Position.getText().toString().equals("") || Mother.getText().toString().equals("") || Father.getText().toString().equals("") || MotherPhone.getText().toString().equals("") || FatherPhone.getText().toString().equals("")){
                     warning.setText("All fields must be filled");
                     CardID.setText("");
                     Fio.setText("");
