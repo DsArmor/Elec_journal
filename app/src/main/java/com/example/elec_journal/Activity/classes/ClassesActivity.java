@@ -1,4 +1,4 @@
-package com.example.elec_journal.Activity;
+package com.example.elec_journal.Activity.classes;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.elec_journal.Activity.learners.ListLearnersActivity;
 import com.example.elec_journal.R;
 
 public class ClassesActivity extends AppCompatActivity {

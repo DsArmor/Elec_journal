@@ -13,7 +13,7 @@ public class School {
     public static Section[] sections = {};
 
     public static String getListClasses(int i){
-        return "\n\t" +"Class Teacher: "+classes[i].ClassTeacher.FullName+"\n\t" +"Learners: \n"+classes[i].getList();
+        return "\n\t" +"Class Teacher: "+classes[i].ClassTeacher.FullName+"\n\t" +"Learners: \n\t\t"+classes[i].getList();
     }
     //TODO add num_classes function to unite all numbers in massive
     public static String[] getNumClasses(){

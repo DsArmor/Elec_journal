@@ -41,11 +41,11 @@
             android:label="AddLearnerActivity" >
         </activity>
         <activity
-            android:name=".Activity.ClassesActivity"
+            android:name=".Activity.classes.ClassesActivity"
             android:label="ClassesActivity" >
         </activity>
         <activity
-            android:name=".Activity.AddClassActivity"
+            android:name=".Activity.classes.AddClassActivity"
             android:label="AddClassActivity" >
         </activity>
         <activity

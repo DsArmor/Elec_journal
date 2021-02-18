@@ -1,4 +1,4 @@
-package com.example.elec_journal.Activity;
+package com.example.elec_journal.Activity.classes;
 
 import android.os.Bundle;
 import android.view.View;
