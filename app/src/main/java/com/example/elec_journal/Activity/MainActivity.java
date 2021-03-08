@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
         Button teachers = findViewById(R.id.Teachers);
         Button learners = findViewById(R.id.Learners);
         Button classes = findViewById(R.id.Classes);
-        Button electives = findViewById(R.id.Electives);
-        Button sections = findViewById(R.id.Sections);
-        Button employees = findViewById(R.id.Employees);
-        Button journal = findViewById(R.id.Electrnic_journal);
         teachers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

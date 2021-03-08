@@ -14,6 +14,7 @@
         android:text="Teachers"
         app:layout_constraintBottom_toTopOf="@+id/Learners"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -24,58 +25,19 @@
         android:text="Learners"
         app:layout_constraintBottom_toTopOf="@+id/Classes"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Classes"
         android:layout_width="224dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="284dp"
         android:text="Classes"
-        app:layout_constraintBottom_toTopOf="@+id/Electives"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Electives"
-        android:layout_width="224dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="24dp"
-        android:text="Electives"
-        app:layout_constraintBottom_toTopOf="@+id/Sections"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Sections"
-        android:layout_width="224dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="24dp"
-        android:text="Sections"
-        app:layout_constraintBottom_toTopOf="@+id/Employees"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Employees"
-        android:layout_width="224dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="16dp"
-        android:text="Employees"
-        app:layout_constraintBottom_toTopOf="@+id/Electrnic_journal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Electrnic_journal"
-        android:layout_width="224dp"
-        android:layout_height="51dp"
-        android:text="Electrnic journal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/school"
